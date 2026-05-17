@@ -27,7 +27,7 @@ function App() {
   const fetchAnalytics = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:5000/api/leads/analytics"
+        "https://leadzen-backend-hj7j.onrender.com/api/leads/analytics"
       );
 
       setAnalytics(res.data);
@@ -39,7 +39,7 @@ function App() {
   const fetchLeads = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:5000/api/leads"
+        "https://leadzen-backend-hj7j.onrender.com/api/leads"
       );
 
       setLeads(res.data);
@@ -66,7 +66,7 @@ function App() {
 
     try {
       await axios.post(
-        "http://localhost:5000/api/leads",
+        "https://leadzen-backend-hj7j.onrender.com/api/leads",
         formData
       );
 
