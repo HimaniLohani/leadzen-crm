@@ -114,7 +114,6 @@ React Frontend → Express Backend → MongoDB Atlas → Real-time UI Update
 
 ## 👨‍💻 Author
 Himani Lohani
-Built for Full Stack Development Assignment Submission.
 
 ---
 
