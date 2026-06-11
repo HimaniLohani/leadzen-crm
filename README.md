@@ -66,9 +66,6 @@ cd leadzen-crm
 cd backend
 npm install
 
-Create `.env` file:
-MONGO_URI=mongodb+srv://<username>:<password>@cluster0.tnowpgd.mongodb.net/?retryWrites=true&w=majority
-PORT=5000
 
 Start backend:
 npm start
