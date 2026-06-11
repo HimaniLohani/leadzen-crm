@@ -9,4 +9,9 @@ app.use(express.json());
 
 app.use("/api/leads", leadRoutes);
 
+
+app.get("/", (req, res) => {
+  res.send("LeadZen CRM Backend is Running 🚀");
+});
+
 export default app;
