@@ -35,6 +35,25 @@ export const getLeads = async (
   }
 };
 
+export const deleteLead = async (
+  req: Request,
+  res: Response
+) => {
+  try {
+    const lead = await Lead.findByIdAndDelete(req.params.id);
+
+    if (!lead) {
+      return res.status(404).json({ message: "Lead not found" });
+    }
+
+    res.json({ message: "Lead deleted successfully" });
+  } catch (error: any) {
+    res.status(500).json({
+      message: error.message,
+    });
+  }
+};
+
 export const getAnalytics = async (
   req: Request,
   res: Response

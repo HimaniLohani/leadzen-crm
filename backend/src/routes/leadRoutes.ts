@@ -2,8 +2,9 @@ import express from "express";
 
 import {
   createLead,
-  getLeads,
+  deleteLead,
   getAnalytics,
+  getLeads,
 } from "../controller/leadController";
 
 const router = express.Router();
@@ -14,7 +15,6 @@ router.get("/", getLeads);
 
 router.get("/analytics", getAnalytics);
 
+router.delete("/:id", deleteLead);
+
 export default router;
-console.log(createLead);
-console.log(getLeads);
-console.log(getAnalytics);
